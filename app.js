@@ -35,7 +35,7 @@ function loss(user, comp) {
     computerScore_span.innerHTML = computerScore;
     const su = " user".fontsize(3.6).sub();
     const sc = " comp".fontsize(3.6).sub();
-    result_div.innerHTML = toWord(user) + sc + " Beats " + toWord(comp) + su + " YOU LOOSE.....";
+    result_div.innerHTML = toWord(comp) + sc + " Beats " + toWord(user) + su + " YOU LOOSE.....";
     document.getElementById(user).classList.add('red');
     setTimeout(function () { document.getElementById(user).classList.remove('red') }, 1000);
 
@@ -47,7 +47,7 @@ function draw(user, comp) {
     computerScore_span.innerHTML = computerScore;
     const su = " user".fontsize(3.6).sub();
     const sc = " comp".fontsize(3.6).sub();
-    result_div.innerHTML = toWord(user) + sc + " Equals " + toWord(comp) + su + " YOU DRAW!";
+    result_div.innerHTML = toWord(user) + su + " Equals " + toWord(comp) + sc + " YOU DRAW!";
     document.getElementById(user).classList.add('gray');
     setTimeout(function () { document.getElementById(user).classList.remove('gray') }, 1000);
 
